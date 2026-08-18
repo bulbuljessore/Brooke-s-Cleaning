@@ -21,6 +21,11 @@ img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:bl
 @keyframes ba-pulse{0%,100%{box-shadow:0 2px 10px rgba(0,0,0,.35),0 0 0 0 rgba(255,255,255,.55)}45%{box-shadow:0 2px 10px rgba(0,0,0,.35),0 0 0 12px rgba(255,255,255,0)}}
 .lab{position:absolute;bottom:12px;font:600 11px/1 sans-serif;letter-spacing:.14em;color:#fff;background:rgba(12,38,40,.85);padding:7px 11px}
 .lab.a{right:12px}.lab.b{left:12px}
+@media (max-width:620px){
+  .knob{width:46px;height:46px;font-size:14px}
+  .lab{font-size:10px;padding:6px 9px;bottom:10px}
+  .lab.a{right:10px}.lab.b{left:10px}
+}
 </style>
 <div class="wrap idle" style="--p:${start}%">
 <img class="after" src="${after}" alt="after">
